@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const PHONE_NUMBER = "+14155138544";
 const IMESSAGE_LINK = `sms:${PHONE_NUMBER}`;
@@ -131,12 +130,11 @@ export default function EmmaLanding() {
               </div>
               <div className="flex items-center gap-3">
                 <SkyToggle sky={sky} onToggle={toggleSky} />
-                <Link
-                  href="https://emma.getretrograde.com"
-                  className="text-[13px] font-medium bg-[#1C1917] text-[#FFF8F0] rounded-full px-[18px] py-2 hover:opacity-90 transition-opacity"
+                <span
+                  className="text-[13px] font-medium bg-[#1C1917]/40 text-[#FFF8F0] rounded-full px-[18px] py-2 cursor-default"
                 >
                   Login
-                </Link>
+                </span>
               </div>
             </nav>
 
@@ -206,12 +204,11 @@ export default function EmmaLanding() {
               <span className="text-[15px] text-[#1A0A00]/45">Pricing</span>
               <span className="text-[15px] text-[#1A0A00]/45">About</span>
               <SkyToggle sky={sky} onToggle={toggleSky} />
-              <Link
-                href="https://emma.getretrograde.com"
-                className="text-[15px] font-medium bg-[#1A0A00] text-[#FFF8F0] rounded-full px-6 py-2.5 hover:opacity-90 transition-opacity"
+              <span
+                className="text-[15px] font-medium bg-[#1A0A00]/40 text-[#FFF8F0] rounded-full px-6 py-2.5 cursor-default"
               >
                 Login
-              </Link>
+              </span>
             </div>
           </nav>
 

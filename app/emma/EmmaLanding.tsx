@@ -32,7 +32,7 @@ function CTAButton({
   iconColor?: string;
 }) {
   return (
-    <a href="/emma/onboarding" className={`relative group block ${className}`}>
+    <a href="https://emma.getretrograde.com/emma/onboarding" className={`relative group block ${className}`}>
       <div
         className="flex items-center justify-center gap-3 bg-[#0F110A] border border-black text-white rounded-full w-full py-[18px] font-semibold text-base transition-transform hover:scale-[1.02]"
         style={{ boxShadow: CTA_SHADOW }}
@@ -149,7 +149,7 @@ export default function EmmaLanding() {
                 It all starts with one text.
               </p>
               <div className="mt-8 w-full">
-                <a href="/emma/onboarding" className="block w-full">
+                <a href="https://emma.getretrograde.com/emma/onboarding" className="block w-full">
                   <div
                     className="flex items-center justify-center gap-3 bg-[#1C1917] text-white rounded-full w-full py-[18px] font-semibold text-base"
                     style={{ boxShadow: CTA_SHADOW }}

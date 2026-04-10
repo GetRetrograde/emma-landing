@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk } from "next/font/google";
+import PassphraseGate from "./PassphraseGate";
 
 
 const spaceGrotesk = Space_Grotesk({
@@ -33,7 +34,9 @@ export default function EmmaLayout({
       <style dangerouslySetInnerHTML={{ __html: `
         html, body { margin: 0; padding: 0; background: #D4937F; transition: background 0.5s; }
       `}} />
-      <div className={spaceGrotesk.variable}>{children}</div>
+      <div className={spaceGrotesk.variable}>
+        <PassphraseGate>{children}</PassphraseGate>
+      </div>
     </>
   );
 }
